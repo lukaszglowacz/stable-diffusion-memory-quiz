@@ -6,5 +6,10 @@
     --light-accent-color: #e3a579;
     --dark-shades-color: #332d35;
     --dark-accent-color: #988b8e;
+    --title-font-family: 'Bangers', cursive;
+    --header-font-family: 'Fira Sans Condensed',
+        sans-serif;
+    --main-font-family: 'Andika', sans-serif;
+    
 
 }
