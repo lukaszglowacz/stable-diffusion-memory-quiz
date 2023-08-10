@@ -49,6 +49,7 @@ section {
     overflow: hidden;
     width: 100%;
     padding-top: 100%;
+    cursor: pointer;
 
 }
 
@@ -64,17 +65,6 @@ section {
 .hidden-image {
     display: none;
 }
-
-/* .card-front,
-.card-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .card-front {
     background: #333;
