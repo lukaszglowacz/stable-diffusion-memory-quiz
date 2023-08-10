@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const startButton = document.querySelector('.start-button');
 
     function updateScore() {
-        document.getElementById('correct-score').textContent = `Correct Answers: ${correctScore}`;
-        document.getElementById('wrong-score').textContent = `Wrong Answers: ${wrongScore}`;
+        document.getElementById('correct-score').textContent = `Correct: ${correctScore}`;
+        document.getElementById('wrong-score').textContent = `Wrong: ${wrongScore}`;
     }
 
     function resetCards() {
