@@ -19,6 +19,8 @@ body {
     background: var(--dark-shades-color);
     color: var(--light-shades-color);
     min-height: 100vh;
+    overflow: hidden;
+
 }
 
 header {
@@ -93,18 +95,23 @@ section {
     margin-top: 20px;
 }
 
+
 footer {
-    background: #4a90e2;
-    color: #fff;
+    background: var(--dark-shades-color);
+    color: var(--light-shades-color);
     text-align: center;
-    padding: 10px;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    /* Explicitly setting the right position */
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-Skip to content Search… All gists Back to GitHub @lukaszglowacz @gokulkrishh gokulkrishh/media-query.css Last active 9 hours ago • Report abuse Code Revisions 5 Stars 2,
-733 Forks 1,
-095 CSS Media Queries for Desktop,
-Tablet,
-Mobile. media-query.css
+/* Media queries */
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -156,7 +163,47 @@ Mobile. media-query.css
 
 @media (min-width: 481px) and (max-width: 767px) {
 
-    /* CSS */
+    .logo {
+        max-height: 30px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .game-section {
+        flex: 3;
+        overflow: hidden;
+    }
+
+    .button-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-container {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* Add this line for 4 rows */
+        grid-gap: 10px;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .game-card img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        /* Adjusts the size of the image within its box */
+    }
 
 }
 
@@ -167,6 +214,17 @@ Mobile. media-query.css
 
 
 @media (min-width: 320px) and (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        height: 50px;
+        /* You can adjust this value */
+        margin-top: 20px;
+    }
+
     .logo {
         max-height: 30px;
     }
