@@ -11,3 +11,91 @@
         sans-serif;
     --main-font-family: 'Andika', sans-serif;
 }
+
+body {
+    font-family: var(--main-font-family);
+    margin: 0;
+    padding: 0;
+    background: var(--light-shades-color);
+    color: var(--dark-shades-color);
+    min-height: 100vh;
+}
+
+header {
+    font-family: var(--title-font-family);
+    color: var(--main-brand-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    width: 80%;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.game-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+
+}
+
+.card-front img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hidden-image {
+    display: none;
+}
+
+/* .card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.card-front {
+    background: #333;
+}
+
+.card-back {
+    background: #4a90e2;
+}
+
+.start-button {
+    background: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+footer {
+    background: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
