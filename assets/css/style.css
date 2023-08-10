@@ -16,17 +16,27 @@ body {
     font-family: var(--main-font-family);
     margin: 0;
     padding: 0;
-    background: var(--light-shades-color);
-    color: var(--dark-shades-color);
+    background: var(--dark-shades-color);
+    color: var(--light-shades-color);
     min-height: 100vh;
 }
 
 header {
-    font-family: var(--title-font-family);
-    color: var(--main-brand-color);
-    padding: 20px;
-    text-align: center;
-    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100px;
+    /* You can adjust this value */
+}
+
+.logo {
+    max-height: 50px;
+    width: auto;
+    /* This ensures that the aspect ratio of the image is maintained */
+    display: block;
+    /* Removes the default space below an inline image */
 }
 
 section {
@@ -88,4 +98,76 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+Skip to content Search… All gists Back to GitHub @lukaszglowacz @gokulkrishh gokulkrishh/media-query.css Last active 9 hours ago • Report abuse Code Revisions 5 Stars 2,
+733 Forks 1,
+095 CSS Media Queries for Desktop,
+Tablet,
+Mobile. media-query.css
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* CSS */
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* CSS */
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS */
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS */
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px*/
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .logo {
+        max-height: 30px;
+    }
 }
