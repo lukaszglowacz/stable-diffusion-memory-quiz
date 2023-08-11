@@ -116,7 +116,6 @@ section {
     margin: 0 30px;
 }
 
-
 footer {
     background: var(--dark-shades-color);
     color: var(--light-shades-color);
@@ -129,6 +128,64 @@ footer {
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
+}
+
+/* Modal with instructions */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 33, 41, 0.8);
+    /* This allows some view of the content behind the modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.modal-content {
+    background-color: rgba(35, 33, 41, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    /* Adjust this for your content's width */
+    text-align: left;
+    text-decoration: none;
+    color: var(--light-shades-color);
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-content ul {
+    align-self: center;
+    /* Overrides the parent align-items to start at the left */
+    max-width: 400px;
+}
+
+#closeModalBtn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--main-brand-color);
+    color: var(--light-shades-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#closeModalBtn:hover {
+    background-color: #0a74da;
 }
 
 /* Media queries */

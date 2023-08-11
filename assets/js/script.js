@@ -105,3 +105,25 @@ document.addEventListener('DOMContentLoaded', function () {
         startButton.textContent = 'Play again'; // Change the button text to "Play again"
     };
 });
+
+// Modal with instructions
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById('rulesModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    // Show the modal when the page loads
+    modal.style.visibility = 'visible';
+    modal.style.opacity = '1';
+
+    closeModalBtn.addEventListener('click', function () {
+        modal.style.visibility = 'hidden';
+        modal.style.opacity = '0';
+    });
+
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.style.visibility = 'hidden';
+            modal.style.opacity = '0';
+        }
+    });
+});
