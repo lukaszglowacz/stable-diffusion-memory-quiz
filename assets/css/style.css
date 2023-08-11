@@ -62,7 +62,6 @@ section {
     width: 100%;
     padding-top: 100%;
     cursor: pointer;
-
 }
 
 .card-front img {
@@ -180,12 +179,20 @@ footer {
     border: none;
     background-color: var(--main-brand-color);
     color: var(--light-shades-color);
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    border: none;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.4s;
 }
 
 #closeModalBtn:hover {
-    background-color: #0a74da;
+    background-color: var(--light-shades-color);
+    color: var(--main-brand-color);
 }
 
 /* Media queries */
@@ -197,7 +204,9 @@ footer {
 
 @media (min-width: 1281px) {
 
-    /* CSS */
+    .modal-content {
+        font-size: 16px;
+    }
 
 }
 
@@ -208,7 +217,9 @@ footer {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-    /* CSS */
+    .modal-content {
+        font-size: 16px;
+    }
 
 }
 
@@ -217,11 +228,7 @@ footer {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    /* CSS */
-
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* 
   ##Device = Tablets, Ipads (landscape)
@@ -229,9 +236,164 @@ footer {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        overflow: auto;
+        /* allow scrolling in landscape */
+    }
 
-    /* CSS */
+    .logo {
+        max-height: 30px;
+    }
 
+    main {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .game-section {
+        flex: 3;
+        overflow: hidden;
+    }
+
+    .button-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* Add this line for 4 rows */
+        grid-gap: 10px;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .game-card img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        /* Adjusts the size of the image within its box */
+    }
+
+    .modal-content {
+        font-size: 11px;
+    }
+}
+
+/* iPhone X / iPhone 12 Pro*/
+@media screen and (max-width: 900px) and (min-width: 811px) and (orientation: landscape) {
+    body {
+        overflow: auto;
+        /* allow scrolling in landscape */
+    }
+
+    .logo {
+        max-height: 30px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .game-section {
+        flex: 3;
+        overflow: hidden;
+    }
+
+    .button-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-container {
+        width: 52%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* Add this line for 4 rows */
+        grid-gap: 10px;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .game-card img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        /* Adjusts the size of the image within its box */
+    }
+
+    .modal-content {
+        font-size: 11px;
+    }
+}
+
+/* iPad Air*/
+@media screen and (max-width: 1181px) and (min-width: 1179px) and (orientation: landscape) {
+    body {
+        overflow: auto;
+        /* allow scrolling in landscape */
+    }
+
+    .logo {
+        max-height: 30px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .game-section {
+        flex: 3;
+        overflow: hidden;
+    }
+
+    .button-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* Add this line for 4 rows */
+        grid-gap: 10px;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .game-card img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        /* Adjusts the size of the image within its box */
+    }
+
+    .modal-content {
+        font-size: 11px;
+    }
 }
 
 /* 
@@ -239,7 +401,11 @@ footer {
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    body {
+        overflow: auto;
+        /* allow scrolling in landscape */
+    }
 
     .logo {
         max-height: 30px;
@@ -281,6 +447,10 @@ footer {
         max-height: 100%;
         object-fit: cover;
         /* Adjusts the size of the image within its box */
+    }
+
+    .modal-content {
+        font-size: 11px;
     }
 
 }
