@@ -41,7 +41,7 @@ header {
     /* Removes the default space below an inline image */
 }
 
-section {
+.all-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +127,7 @@ footer {
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
+    font-size: 12px;
 }
 
 /* Modal with instructions */
