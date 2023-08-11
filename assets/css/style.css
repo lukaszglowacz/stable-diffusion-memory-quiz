@@ -476,4 +476,8 @@ footer {
     .logo {
         max-height: 30px;
     }
+
+    .modal-content {
+        font-size: 12px;
+    }
 }
