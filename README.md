@@ -80,6 +80,8 @@ The CSS validator results are below:
 
 ![no-errors-css](https://user-images.githubusercontent.com/119242394/213244593-53d7ec51-3a37-44fd-a6b4-c74edabcb237.jpg)
 
+JSHint Validator shows no errors in the JavaScript code.
+
 ### Responsiveness Test
 
 The responsive design tests were carried out manually with Google Chrome DevTools.
