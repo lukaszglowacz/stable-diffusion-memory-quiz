@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic Meta Information -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO-related Metadata -->
     <meta
       name="description"
       content="Engage in a thrilling stable diffusion memory card game designed to test and enhance your recall skills. With vibrant card designs and a user-friendly interface, challenge yourself and see how fast you can match pairs. Perfect for all ages, our game promises endless fun and cognitive sharpening."
@@ -12,30 +15,43 @@
       name="keywords"
       content="memory game, card matching, stable diffusionrecall skills, cognitive game, brain training, card game, memory challenge, match pairs, mind sharpening, fun game for all ages"
     />
+
+    <!-- Font Awesome Icons CSS Link -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+
+    <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Bangers&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Favicons and Touch Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Meta for Microsoft and Theme Color -->
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Page Title -->
     <title>Memory Game</title>
   </head>
 
   <body>
+    <!-- Header with Logo -->
     <header>
       <img
         src="assets/images/norton-i-memory-game-webp.webp"
@@ -44,11 +60,12 @@
       />
     </header>
 
-    <!-- Modal Structure -->
+    <!-- Game Rules Modal -->
     <div class="modal-overlay" id="rulesModal">
       <div class="modal-content">
         <h2>Game Rules</h2>
         <ul>
+          <!-- Listing the Game Rules -->
           <li>Press the <b>Start Game</b> button.</li>
           <li>The game is to find pairs of the same pictures.</li>
           <li>
@@ -70,14 +87,18 @@
             <b>Good Luck!</b>
           </li>
         </ul>
+        <!-- Close Modal Button -->
         <button id="closeModalBtn">Got it!</button>
       </div>
     </div>
 
+    <!-- Main Game Section -->
     <main>
+      <!-- Memory Card Game Section -->
       <div class="game-section">
         <div class="all-section">
           <div class="game-container">
+            <!-- Individual Card Structure -->
             <div class="game-card">
               <div class="card-front">
                 <img
@@ -92,6 +113,8 @@
                 />
               </div>
               <div class="card-back"></div>
+            </div>
+            <!-- Note: Similar card structure is repeated for each card -->
             </div>
             <div class="game-card">
               <div class="card-front">
@@ -322,18 +345,25 @@
         </div>
       </div>
 
+    <!-- Start Game Button Section -->
       <div class="button-section">
         <div class="all-section">
           <button class="start-button">Start Game</button>
         </div>
+        <!-- Score Display Section -->
         <div class="all-section">
           <div class="score-board">
             <p><span id="correct-score">Correct: 0</span></p>
+            <!-- Note: Rest of the elements are trimmed for brevity -->
             <p><span id="wrong-score">Wrong: 0</span></p>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- Footer & Other Sections (if available) would follow -->
+    
+    <!-- Scripts (if available) would be placed before the closing body tag -->
     <footer>
       <p>© 2023 Stable Diffusion Memory Quiz</p>
     </footer>

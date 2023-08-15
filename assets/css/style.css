@@ -1,5 +1,7 @@
+/* Importing required fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Bangers&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Define basic color and font variables for the site */
 :root {
     --main-brand-color: #cc462d;
     --light-shades-color: #faf7f7;
@@ -12,6 +14,7 @@
     --main-font-family: 'Andika', sans-serif;
 }
 
+/* Basic styling for the body of the site */
 body {
     font-family: var(--main-font-family);
     margin: 0;
@@ -23,16 +26,15 @@ body {
 
 }
 
+/* Styling for the header section */
 header {
     display: flex;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     height: 100px;
-    /* You can adjust this value */
 }
 
+/* Logo styling */
 .logo {
     max-height: 50px;
     width: auto;
@@ -41,12 +43,14 @@ header {
     /* Removes the default space below an inline image */
 }
 
+/* Styling for container of all sections */
 .all-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Styles for game-container */
 .game-container {
     width: 100%;
     max-width: 600px;
@@ -56,6 +60,7 @@ header {
     margin: 10px;
 }
 
+/* Styles for game-card */
 .game-card {
     position: relative;
     overflow: hidden;
@@ -64,6 +69,7 @@ header {
     cursor: pointer;
 }
 
+/* Styles for the front of the card with an image */
 .card-front img {
     position: absolute;
     top: 0;
@@ -73,10 +79,12 @@ header {
     object-fit: cover;
 }
 
+/* Styles to hide the image */
 .hidden-image {
     display: none;
 }
 
+/* Styles for the front and back of the card */
 .card-front {
     background: #333;
 }
@@ -85,6 +93,7 @@ header {
     background: #4a90e2;
 }
 
+/* Styles for the start-button */
 .start-button {
     background-color: #4CAF50;
     border: none;
@@ -99,12 +108,13 @@ header {
     transition-duration: 0.4s;
 }
 
+/* Hover effect for the start-button */
 .start-button:hover {
     background-color: var(--light-shades-color);
-    /* Green */
     color: var(--dark-shades-color);
 }
 
+/* Styling for the score-board section */
 .score-board {
     display: flex;
     justify-content: space-between;
@@ -115,6 +125,7 @@ header {
     margin: 0 30px;
 }
 
+/* Styling for the footer */
 footer {
     background: var(--dark-shades-color);
     color: var(--light-shades-color);
@@ -130,8 +141,7 @@ footer {
     font-size: 12px;
 }
 
-/* Modal with instructions */
-
+/* Styles for the modal with instructions */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -139,7 +149,6 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(35, 33, 41, 0.8);
-    /* This allows some view of the content behind the modal */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,13 +158,13 @@ footer {
     transition: opacity 0.3s;
 }
 
+/* Styles for the content inside the modal */
 .modal-content {
     background-color: rgba(35, 33, 41, 0.8);
     padding: 20px;
     border-radius: 5px;
     width: 100%;
     height: 100%;
-    /* Adjust this for your content's width */
     text-align: left;
     text-decoration: none;
     color: var(--light-shades-color);
@@ -174,6 +183,7 @@ footer {
     max-width: 400px;
 }
 
+/* Styles for the close button in the modal */
 #closeModalBtn {
     margin-top: 20px;
     padding: 10px 15px;
@@ -208,7 +218,6 @@ footer {
     .modal-content {
         font-size: 16px;
     }
-
 }
 
 /* 
@@ -221,7 +230,6 @@ footer {
     .modal-content {
         font-size: 16px;
     }
-
 }
 
 /* 
@@ -453,7 +461,6 @@ footer {
     .modal-content {
         font-size: 11px;
     }
-
 }
 
 /* 
