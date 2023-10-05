@@ -33,11 +33,29 @@
     />
 
     <!-- Favicons and Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="assets/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
 
     <!-- Meta for Microsoft and Theme Color -->
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -60,61 +78,26 @@
       />
     </header>
 
-    <!-- Game Rules Modal -->
-    <div class="modal-overlay" id="rulesModal">
-      <div class="modal-content">
-        <h2>Game Rules</h2>
-        <ul>
-          <!-- Listing the Game Rules -->
-          <li>Press the <b>Start Game</b> button.</li>
-          <li>The game is to find pairs of the same pictures.</li>
-          <li>
-            When you find two of the same pictures, you get a point to the
-            <b>Correct</b> section and those two pictures are revealed.
-          </li>
-          <li>
-            When you find two different pictures, the pictures are covered and
-            you get a point to the <b>Wrong</b> section.
-          </li>
-          <li>
-            The game is over when you have uncovered all pairs of pictures.
-          </li>
-          <li>
-            You win when the number of <b>Correct</b> points is greater than the
-            <b>Wrong</b> points.
-          </li>
-          <li>
-            <b>Good Luck!</b>
-          </li>
-        </ul>
-        <!-- Close Modal Button -->
-        <button id="closeModalBtn">Got it!</button>
-      </div>
-    </div>
-
     <!-- Main Game Section -->
     <main>
       <!-- Memory Card Game Section -->
       <div class="game-section">
-        <div class="all-section">
-          <div class="game-container">
-            <!-- Individual Card Structure -->
-            <div class="game-card">
-              <div class="card-front">
-                <img
-                  class="default-image"
-                  src="assets/images/rainbow-eye-with-rainbow-painted-it-square-webp.webp"
-                  alt="Default Artwork"
-                />
-                <img
-                  class="hidden-image"
-                  src="assets/images/0cc6715349634744a8f63f3b73a48f05.webp"
-                  alt="Artwork 1"
-                />
-              </div>
-              <div class="card-back"></div>
-            
-            
+        <div class="game-container">
+          <!-- Individual Card Structure -->
+          <div class="game-card">
+            <div class="card-front">
+              <img
+                class="default-image"
+                src="assets/images/rainbow-eye-with-rainbow-painted-it-square-webp.webp"
+                alt="Default Artwork"
+              />
+              <img
+                class="hidden-image"
+                src="assets/images/0cc6715349634744a8f63f3b73a48f05.webp"
+                alt="Artwork 1"
+              />
+            </div>
+            <div class="card-back"></div>
           </div>
           <div class="game-card">
             <div class="card-front">
@@ -343,7 +326,12 @@
           </div>
         </div>
       </div>
+    </main>
 
+    <!-- Footer & Other Sections (if available) would follow -->
+
+    <!-- Scripts (if available) would be placed before the closing body tag -->
+    <footer>
       <!-- Start Game Button Section -->
       <div class="button-section">
         <div class="all-section">
@@ -358,14 +346,38 @@
           </div>
         </div>
       </div>
-    </main>
-
-    <!-- Footer & Other Sections (if available) would follow -->
-
-    <!-- Scripts (if available) would be placed before the closing body tag -->
-    <footer>
-      <p>© 2023 Stable Diffusion Memory Quiz</p>
     </footer>
     <script src="assets/js/script.js"></script>
+    <!-- Game Rules Modal -->
+    <div class="modal-overlay" id="rulesModal">
+      <div class="modal-content">
+        <h2>Game Rules</h2>
+        <ul>
+          <!-- Listing the Game Rules -->
+          <li>Press the <b>Start Game</b> button.</li>
+          <li>The game is to find pairs of the same pictures.</li>
+          <li>
+            When you find two of the same pictures, you get a point to the
+            <b>Correct</b> section and those two pictures are revealed.
+          </li>
+          <li>
+            When you find two different pictures, the pictures are covered and
+            you get a point to the <b>Wrong</b> section.
+          </li>
+          <li>
+            The game is over when you have uncovered all pairs of pictures.
+          </li>
+          <li>
+            You win when the number of <b>Correct</b> points is greater than the
+            <b>Wrong</b> points.
+          </li>
+          <li>
+            <b>Good Luck!</b>
+          </li>
+        </ul>
+        <!-- Close Modal Button -->
+        <button id="closeModalBtn">Got it!</button>
+      </div>
+    </div>
   </body>
 </html>
