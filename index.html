@@ -330,7 +330,6 @@
 
     <!-- Footer & Other Sections (if available) would follow -->
 
-    <!-- Scripts (if available) would be placed before the closing body tag -->
     <footer>
       <!-- Start Game Button Section -->
       <div class="button-section">
@@ -348,6 +347,7 @@
       </div>
     </footer>
     <script src="assets/js/script.js"></script>
+
     <!-- Game Rules Modal -->
     <div class="modal-overlay" id="rulesModal">
       <div class="modal-content">
@@ -377,6 +377,13 @@
         </ul>
         <!-- Close Modal Button -->
         <button id="closeModalBtn">Got it!</button>
+      </div>
+    </div>
+    <!-- Win or Loose modal -->
+    <div id="resultModal" class="modal">
+      <div class="modal-content-win-loose">
+        <span id="closeResultBtn" class="close-button">X</span>
+        <p id="resultMessage"></p>
       </div>
     </div>
   </body>
